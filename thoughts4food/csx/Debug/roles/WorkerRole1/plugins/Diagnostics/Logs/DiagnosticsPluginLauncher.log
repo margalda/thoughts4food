@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Emulator config file set to d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] DiagnosticsStoreRootPath set to: d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\approot
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Loading config file: d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Config file to read: d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Emulator config file set to d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:22 PM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:23 PM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:23 PM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:04:23 PM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:05:33 PM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [1/8/2018 6:05:33 PM] DiagnosticPlugin exited with code 0
