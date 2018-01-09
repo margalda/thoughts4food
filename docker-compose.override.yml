@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  webrole1:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat

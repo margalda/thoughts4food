@@ -20,16 +20,17 @@
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
       <Setting name="DataConnectionString" />
+      <Setting name="ContainerName" />
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\WebRole1Content\" />
+        <SourceDirectory path="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\rcf\Debug\WebRole1Content\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\ecf\WebRole1Content\" />
+        <SourceDirectory path="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\ecf\WebRole1Content\" />
       </Content>
     </Contents>
     <Imports>
@@ -43,10 +44,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\WorkerRole1Content\" />
+        <SourceDirectory path="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\rcf\Debug\WorkerRole1Content\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\ecf\WorkerRole1Content\" />
+        <SourceDirectory path="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\ecf\WorkerRole1Content\" />
       </Content>
     </Contents>
     <Imports>

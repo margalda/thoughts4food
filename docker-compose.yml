@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  webrole1:
+    image: webrole1
+    build:
+      context: .\WebRole1
+      dockerfile: Dockerfile
