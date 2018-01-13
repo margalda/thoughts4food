@@ -19,11 +19,11 @@ namespace WorkerRole1
 
             try
             {
-                this.RunAsync(this.cancellationTokenSource.Token).Wait();
+                RunAsync(cancellationTokenSource.Token).Wait();
             }
             finally
             {
-                this.runCompleteEvent.Set();
+                runCompleteEvent.Set();
             }
         }
 
@@ -46,8 +46,8 @@ namespace WorkerRole1
         {
             Trace.TraceInformation("WorkerRole1 is stopping");
 
-            this.cancellationTokenSource.Cancel();
-            this.runCompleteEvent.WaitOne();
+            cancellationTokenSource.Cancel();
+            runCompleteEvent.WaitOne();
 
             base.OnStop();
 
@@ -71,7 +71,8 @@ namespace WorkerRole1
 
                 if (queue.Exists())
                 {
-                    Trace.TraceInformation(string.Format("queue size '{0}'.", queue.ApproximateMessageCount));
+                    queue.FetchAttributes();
+                    Trace.TraceInformation(string.Format("queue size is '{0}'.", queue.ApproximateMessageCount));
 
                     var msg = queue.GetMessage();
                     if (msg != null)

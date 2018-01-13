@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="fdca9755-44ed-445c-92ca-c87534db681a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="afe9dce6-3b67-4089-a3e2-340b5a672b19" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="thoughts4foodGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -10,6 +10,11 @@
         </inPort>
       </componentports>
       <settings>
+        <aCS name="WebRole1:ContainerName" defaultValue="">
+          <maps>
+            <mapMoniker name="/thoughts4food/thoughts4foodGroup/MapWebRole1:ContainerName" />
+          </maps>
+        </aCS>
         <aCS name="WebRole1:DataConnectionString" defaultValue="">
           <maps>
             <mapMoniker name="/thoughts4food/thoughts4foodGroup/MapWebRole1:DataConnectionString" />
@@ -49,6 +54,11 @@
         </lBChannel>
       </channels>
       <maps>
+        <map name="MapWebRole1:ContainerName" kind="Identity">
+          <setting>
+            <aCSMoniker name="/thoughts4food/thoughts4foodGroup/WebRole1/ContainerName" />
+          </setting>
+        </map>
         <map name="MapWebRole1:DataConnectionString" kind="Identity">
           <setting>
             <aCSMoniker name="/thoughts4food/thoughts4foodGroup/WebRole1/DataConnectionString" />
@@ -82,11 +92,12 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="WebRole1" generation="1" functional="0" release="0" software="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="WebRole1" generation="1" functional="0" release="0" software="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
             <settings>
+              <aCS name="ContainerName" defaultValue="" />
               <aCS name="DataConnectionString" defaultValue="" />
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
               <aCS name="__ModelData" defaultValue="&lt;m role=&quot;WebRole1&quot; xmlns=&quot;urn:azure:m:v1&quot;&gt;&lt;r name=&quot;WebRole1&quot;&gt;&lt;e name=&quot;Endpoint1&quot; /&gt;&lt;/r&gt;&lt;r name=&quot;WorkerRole1&quot; /&gt;&lt;/m&gt;" />
@@ -103,7 +114,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="WorkerRole1" generation="1" functional="0" release="0" software="d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="WorkerRole1" generation="1" functional="0" release="0" software="C:\Users\margalda\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <settings>
               <aCS name="DataConnectionString" defaultValue="" />
               <aCS name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" defaultValue="" />
@@ -132,9 +143,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="2c870f67-c8e3-4cbb-9ecc-8ca3de6b66d4" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
+    <implementation Id="20e919c7-98af-47b3-99c3-ff660669d072" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="99bb594b-4e77-403d-b948-17405585e299" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="6f0077c7-ebac-49e0-9db9-d09ed6313235" ref="Microsoft.RedDog.Contract\Interface\WebRole1:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/thoughts4food/thoughts4foodGroup/WebRole1:Endpoint1" />
           </inPort>
