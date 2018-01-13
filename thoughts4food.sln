@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "thoughts4food", "thoughts4food\thoughts4food.ccproj", "{BABEA08E-4644-49C9-A2DE-512708F15413}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "thoughts4food", "thoughts4food\thoughts4food.ccproj", "{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{0EB713D6-A1CE-44D6-99A0-9205C7EE45AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{06EBA629-1954-437C-B15D-02F49798CD13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +15,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BABEA08E-4644-49C9-A2DE-512708F15413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BABEA08E-4644-49C9-A2DE-512708F15413}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BABEA08E-4644-49C9-A2DE-512708F15413}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BABEA08E-4644-49C9-A2DE-512708F15413}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EB713D6-A1CE-44D6-99A0-9205C7EE45AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EB713D6-A1CE-44D6-99A0-9205C7EE45AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EB713D6-A1CE-44D6-99A0-9205C7EE45AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EB713D6-A1CE-44D6-99A0-9205C7EE45AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06EBA629-1954-437C-B15D-02F49798CD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EBA629-1954-437C-B15D-02F49798CD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EBA629-1954-437C-B15D-02F49798CD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EBA629-1954-437C-B15D-02F49798CD13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {477F2BC0-5134-437B-8985-8D9BACDE3BF5}
 	EndGlobalSection
 EndGlobal

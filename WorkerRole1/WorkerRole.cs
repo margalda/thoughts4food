@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Azure;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage;
-using Microsoft.Azure;
 
 namespace WorkerRole1
 {
@@ -56,31 +56,30 @@ namespace WorkerRole1
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
-
             // initialize the account information
-            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
+            var storageAccount =
+                CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
             // retrieve a reference to the messages queue
             var queueClient = storageAccount.CreateCloudQueueClient();
             var queue = queueClient.GetQueueReference("messagequeue");
             // retrieve messages and write them to the development fabric log
 
-
-            while (true)
+            while (!cancellationToken.IsCancellationRequested)
             {
-                Thread.Sleep(1000);
-
                 if (queue.Exists())
                 {
                     queue.FetchAttributes();
-                    Trace.TraceInformation(string.Format("queue size is '{0}'.", queue.ApproximateMessageCount));
+                    Trace.TraceInformation("queue size is {0}.", queue.ApproximateMessageCount);
 
                     var msg = queue.GetMessage();
                     if (msg != null)
                     {
-                        Trace.TraceInformation(string.Format("Message '{0}' processed.", msg.AsString));
+                        Trace.TraceInformation("Message '{0}' processed.", msg.AsString);
                         queue.DeleteMessage(msg);
                     }
                 }
+
+                await Task.Delay(1000, cancellationToken);
             }
         }
     }

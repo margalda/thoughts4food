@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DF7E6108-1ADB-4050-9800-AE50FFFF22C8}</ProjectGuid>
+    <ProjectGuid>{06EBA629-1954-437C-B15D-02F49798CD13}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WorkerRole1</RootNamespace>
     <AssemblyName>WorkerRole1</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <RoleType>Worker</RoleType>
   </PropertyGroup>
@@ -32,12 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
     </Reference>
@@ -66,10 +60,7 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Spatial, Version=5.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Spatial.5.7.0\lib\net40\System.Spatial.dll</HintPath>
     </Reference>
@@ -80,79 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Customer.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerAddress.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductCategory.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductDescription.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductModel.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductModelProductDescription.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalesOrderDetail.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SalesOrderHeader.cs">
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="thoughts4foodModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>thoughts4foodModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="thoughts4foodModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>thoughts4foodModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="thoughts4foodModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>thoughts4foodModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="WorkerRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="thoughts4foodModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>thoughts4foodModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="thoughts4foodModel.edmx.diagram">
-      <DependentUpon>thoughts4foodModel.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="thoughts4foodModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>thoughts4foodModel.Context.cs</LastGenOutput>
-      <DependentUpon>thoughts4foodModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="thoughts4foodModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>thoughts4foodModel.edmx</DependentUpon>
-      <LastGenOutput>thoughts4foodModel.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

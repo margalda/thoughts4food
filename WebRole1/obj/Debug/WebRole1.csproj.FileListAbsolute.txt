@@ -1,230 +1,64 @@
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ApplicationInsights.config
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\csc.exe
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\csc.exe.config
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\csc.rsp
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\csi.exe
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\csi.rsp
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.CSharp.Core.targets
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\Microsoft.VisualBasic.Core.targets
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.AppContext.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.Collections.Immutable.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.Diagnostics.StackTrace.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.IO.FileSystem.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.IO.FileSystem.Primitives.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\System.Reflection.Metadata.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\vbc.exe
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\vbc.exe.config
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\vbc.rsp
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\VBCSCompiler.exe
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\roslyn\VBCSCompiler.exe.config
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.dll.config
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.pdb
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Antlr3.Runtime.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\AspNet.ScriptManager.bootstrap.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\AspNet.ScriptManager.jQuery.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.Agent.Intercept.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.DependencyCollector.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.PerfCounterCollector.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.ServerTelemetryChannel.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.Web.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.WindowsServer.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.ApplicationInsights.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AspNet.FriendlyUrls.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.OData.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.ScriptManager.MSAjax.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.ScriptManager.WebForms.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Web.Infrastructure.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Newtonsoft.Json.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\System.Spatial.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\System.Web.Optimization.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\WebGrease.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\MonAgentListener.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.OData.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.pdb
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Newtonsoft.Json.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\System.Spatial.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\System.Web.Optimization.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Antlr3.Runtime.pdb
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AspNet.FriendlyUrls.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.ApplicationInsights.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.DependencyCollector.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.ServerTelemetryChannel.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.WindowsServer.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.AI.Web.xml
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.OData.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\de\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\es\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\fr\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\it\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ja\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ko\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\ru\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.dll
-d:\documents\users\margalda\documents\visual studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.pdb
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ApplicationInsights.config
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\csc.exe
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\csc.exe.config
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\csc.rsp
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\csi.exe
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\csi.rsp
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.AppContext.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\vbc.exe
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\vbc.exe.config
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\vbc.rsp
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\VBCSCompiler.exe
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\WebRole1.dll.config
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\WebRole1.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\WebRole1.pdb
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Antlr3.Runtime.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.Web.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.ApplicationInsights.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.OData.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Newtonsoft.Json.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\System.Spatial.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\System.Web.Optimization.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\WebGrease.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\MonAgentListener.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.OData.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.pdb
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Newtonsoft.Json.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\System.Spatial.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\System.Web.Optimization.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Antlr3.Runtime.pdb
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.ApplicationInsights.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\Microsoft.AI.Web.xml
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\de\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\es\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\it\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\de\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\es\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\fr\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\it\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ja\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ko\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ru\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.OData.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\de\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\es\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\it\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\de\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\es\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\fr\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\it\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ja\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ko\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\ru\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.dll
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.pdb
-C:\Users\margalda\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.dll.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\WebRole1.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.OData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Newtonsoft.Json.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\System.Spatial.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\MonAgentListener.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Edm.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.OData.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\Newtonsoft.Json.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\System.Spatial.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\de\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\es\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\fr\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\it\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ja\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ko\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\ru\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebRole1\obj\Debug\WebRole1.pdb

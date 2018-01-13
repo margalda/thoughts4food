@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Windows Azure Blob Storage</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7"/>
     <style type="text/css">
         body {
             font-family: Verdana;
@@ -23,75 +23,75 @@
         }
 
         img {
-            width: 200px;
             height: 175px;
             margin: 2em;
+            width: 200px;
         }
 
-        li {
-            list-style: none;
+        li { list-style: none; }
+
+        ul { padding: 1em; }
+
+        .form { width: 50em; }
+
+        .form li span {
+            float: left;
+            font-weight: bold;
+            width: 30%;
         }
 
-        ul {
-            padding: 1em;
+        .form li input {
+            float: left;
+            width: 70%;
         }
 
-        .form {
-            width: 50em;
-        }
-
-            .form li span {
-                width: 30%;
-                float: left;
-                font-weight: bold;
-            }
-
-            .form li input {
-                width: 70%;
-                float: left;
-            }
-
-            .form input {
-                float: right;
-            }
+        .form input { float: right; }
 
         .item {
             font-size: smaller;
             font-weight: bold;
         }
 
-            .item ul li {
-                padding: 0.25em;
-                background-color: #ffeecc;
-            }
+        .item ul li {
+            background-color: #ffeecc;
+            padding: 0.25em;
+        }
 
-                .item ul li span {
-                    padding: 0.25em;
-                    background-color: #ffffff;
-                    display: block;
-                    font-style: italic;
-                    font-weight: normal;
-                }
+        .item ul li span {
+            background-color: #ffffff;
+            display: block;
+            font-style: italic;
+            font-weight: normal;
+            padding: 0.25em;
+        }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <h1>Add a Recipe</h1>
-            <div class="form">
-                <ul>
-                    <li><span>Name</span><asp:TextBox ID="imageName" runat="server" /></li>
-                    <li><span>Description</span><asp:TextBox ID="imageDescription" runat="server" /></li>
-                    <li><span>Tags</span><asp:TextBox ID="imageTags" runat="server" /></li>
-                    <li><span>Filename</span><asp:FileUpload ID="imageFile" runat="server" /></li>
-                </ul>
-                <asp:Button ID="upload" runat="server" OnClick="upload_Click" Text="Upload Recipe" />
-            </div>
-            <div style="float: left;">
-                Status:
-                <asp:Label ID="status" runat="server" />
-            </div>
+<form id="form1" runat="server">
+    <div>
+        <h1>Add a Recipe</h1>
+        <div class="form">
+            <ul>
+                <li>
+                    <span>Name</span><asp:TextBox ID="imageName" runat="server"/>
+                </li>
+                <li>
+                    <span>Description</span><asp:TextBox ID="imageDescription" runat="server"/>
+                </li>
+                <li>
+                    <span>Tags</span><asp:TextBox ID="imageTags" runat="server"/>
+                </li>
+                <li>
+                    <span>Filename</span><asp:FileUpload ID="imageFile" runat="server"/>
+                </li>
+            </ul>
+            <asp:Button ID="upload" runat="server" OnClick="upload_Click" Text="Upload Recipe"/>
         </div>
-    </form>
+        <div style="float: left;">
+            Status:
+            <asp:Label ID="status" runat="server"/>
+        </div>
+    </div>
+</form>
 </body>
 </html>

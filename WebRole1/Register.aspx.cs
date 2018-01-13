@@ -1,21 +1,22 @@
-﻿using Microsoft.Azure;
+﻿using System;
+using System.Web.UI;
+using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
-using System;
 
 namespace WebRole1
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class Register : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         private void SendToQueue(string message)
         {
             // initialize the account information 
-            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
+            var storageAccount =
+                CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
 
             // retrieve a reference to the messages queue 
             var queueClient = storageAccount.CreateCloudQueueClient();

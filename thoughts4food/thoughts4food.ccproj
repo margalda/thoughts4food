@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.9</ProductVersion>
-    <ProjectGuid>babea08e-4644-49c9-a2de-512708f15413</ProjectGuid>
+    <ProjectGuid>5c8c87a0-82aa-4e61-81d4-1a276c2911ba</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>thoughts4food</RootNamespace>
@@ -40,7 +40,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WebRole1\WebRole1.csproj">
       <Name>WebRole1</Name>
-      <Project>{0eb713d6-a1ce-44d6-99a0-9205c7ee45aa}</Project>
+      <Project>{fb77c359-6e8e-4181-afdb-5fcc8d881cc3}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>WebRole1</RoleName>
@@ -48,7 +48,7 @@
     </ProjectReference>
     <ProjectReference Include="..\WorkerRole1\WorkerRole1.csproj">
       <Name>WorkerRole1</Name>
-      <Project>{df7e6108-1adb-4050-9800-ae50ffff22c8}</Project>
+      <Project>{06eba629-1954-437c-b15d-02f49798cd13}</Project>
       <Private>True</Private>
       <RoleType>Worker</RoleType>
       <RoleName>WorkerRole1</RoleName>
