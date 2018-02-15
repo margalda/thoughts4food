@@ -5,26 +5,106 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        table {
+            border: 1px solid #ccc;
+        }
+
+            table th {
+                background-color: #F7F7F7;
+                color: #333;
+                font-weight: bold;
+            }
+
+            table th, table td {
+                padding: 5px;
+                border-color: #ccc;
+            }
+    </style>
 </head>
 <body>
-<form id="form1" runat="server">
-    <div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Registration<br/>
-    </div>
-    Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br/>
-    Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-    <br/>
-    Mail Address&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-    <br/>
-    Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-    <p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Register"/>
-    </p>
-</form>
+    <form id="form1" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <th colspan="3">Registration
+                </th>
+            </tr>
+            <tr>
+                <td>Username
+                </td>
+                <td>
+                    <asp:TextBox ID="txtUsername" runat="server" />
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtUsername"
+                        runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>Password
+                </td>
+                <td>
+                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtPassword"
+                        runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password
+                </td>
+                <td>
+                    <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" />
+                </td>
+                <td>
+                    <asp:CompareValidator ErrorMessage="Passwords do not match." ForeColor="Red" ControlToCompare="txtPassword"
+                        ControlToValidate="txtConfirmPassword" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>Email
+                </td>
+                <td>
+                    <asp:TextBox ID="txtEmail" runat="server" />
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ErrorMessage="Required" Display="Dynamic" ForeColor="Red"
+                        ControlToValidate="txtEmail" runat="server" />
+                    <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                        ControlToValidate="txtEmail" ForeColor="Red" ErrorMessage="Invalid email address." />
+                </td>
+            </tr>
+            <tr>
+                <td>Age
+                </td>
+                <td>
+                    <asp:TextBox ID="txtAge" runat="server" />
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ErrorMessage="Required" Display="Dynamic" ForeColor="Red"
+                        ControlToValidate="txtAge" runat="server" />
+                    <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
+                        ControlToValidate="txtAge" ForeColor="Red" ErrorMessage="Invalid age." />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <asp:Button Text="Submit" runat="server" OnClick="Submit_Click" />
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
