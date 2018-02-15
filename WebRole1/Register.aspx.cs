@@ -30,7 +30,7 @@ namespace WebRole1
             queue.AddMessage(msg);
         }
 
-        protected void Submit_Click(object sender, EventArgs e)
+        protected void Register_Click(object sender, EventArgs e)
         {
             if (!UserExists(txtUsername.Text))
             {
