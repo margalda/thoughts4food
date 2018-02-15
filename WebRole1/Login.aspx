@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WebRole1.Register" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebRole1.Login" %>
 
 <!DOCTYPE html>
 
@@ -35,7 +35,7 @@
     <form id="form1" runat="server">
         <table border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <th colspan="3">Registration
+                <th colspan="3">Login
                 </th>
             </tr>
             <tr>
@@ -65,48 +65,18 @@
                 </td>
             </tr>
             <tr>
-                <td>Confirm Password
-                </td>
-                <td>
-                    <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" />
-                </td>
-                <td>
-                    <asp:CompareValidator ErrorMessage="Passwords do not match." ForeColor="Red" ControlToCompare="txtPassword"
-                        ControlToValidate="txtConfirmPassword" runat="server" />
-                </td>
-            </tr>
-            <tr>
-                <td>Email
-                </td>
-                <td>
-                    <asp:TextBox ID="txtEmail" runat="server" />
-                </td>
-                <td>
-                    <asp:RequiredFieldValidator ErrorMessage="Required" Display="Dynamic" ForeColor="Red"
-                        ControlToValidate="txtEmail" runat="server" />
-                    <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-                        ControlToValidate="txtEmail" ForeColor="Red" ErrorMessage="Invalid email address." />
-                </td>
-            </tr>
-            <tr>
-                <td>Age
-                </td>
-                <td>
-                    <asp:TextBox ID="txtAge" runat="server" />
-                </td>
-                <td>
-                    <asp:RequiredFieldValidator ErrorMessage="Required" Display="Dynamic" ForeColor="Red"
-                        ControlToValidate="txtAge" runat="server" />
-                    <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                        ControlToValidate="txtAge" ForeColor="Red" ErrorMessage="Invalid age." />
-                </td>
-            </tr>
-            <tr>
                 <td></td>
                 <td>
-                    <asp:Button Text="Sign up" runat="server" OnClick="Register_Click" />
+                    <asp:Button Text="Sign in" runat="server" OnClick="Login_Click" />
                 </td>
                 <td></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <asp:Label runat="server">Not a member yet? </asp:Label><asp:HyperLink NavigateUrl="Register.aspx" runat="server">Register</asp:HyperLink>
+                </td>
             </tr>
         </table>
     </form>
