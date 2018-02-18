@@ -52,7 +52,8 @@ namespace WebRole1
                 int ingrLen = ingredients.Length / 3;
                 for (int j = 0; j < ingrLen; j++)
                 {
-                    sb.AppendLine("- " + ingredients[j, 1] + " " + ingredients[j, 0] + "\n");
+                    string unit = ingredients[j, 2] == "SaucesAndSpices" || ingredients[j, 2] == "Baking" ? "teaspoons" : "grams";
+                    sb.AppendLine("- " + ingredients[j, 1] + " " + unit + " " + ingredients[j, 0] + "\n");
                 }
             }
             Label2.Text = "Cuisine: " + cuisine;
@@ -159,7 +160,7 @@ namespace WebRole1
                             {
                                 ans[j, 0] = reader.GetString(0);
                                 ans[j, 1] = reader.GetDecimal(2).ToString();
-                                ans[j, 2] = reader.GetString(0);
+                                ans[j, 2] = reader.GetString(4);
                                 reader.Read();
                             }
                             return ans;
