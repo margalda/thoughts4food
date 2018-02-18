@@ -14,11 +14,9 @@ namespace WebRole1
     {
         private double realRating;
         private int numOfRaters;
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            SqlDataReader recipe = getFromSQL("Name", "Recipes", "Burger");
+            string[] recipe = getRecipeFromSQL("Burger");
             string name = "";
             string description = "";
             double preperationTime = 0;
@@ -26,14 +24,13 @@ namespace WebRole1
             int rating = 3;
             if (recipe != null)
             {
-                recipe.Read();
-                name = recipe.GetString(0);
-                description = recipe.GetString(1);
-                preperationTime = Convert.ToDouble(recipe.GetString(2));
-                cuisine = recipe.GetString(3);
-                rating = Convert.ToInt32(recipe.GetString(4));
-                realRating = Convert.ToDouble(recipe.GetString(4));
-                numOfRaters = Convert.ToInt32(recipe.GetString(5));
+                name = recipe[0];
+                description = recipe[1];
+                preperationTime = Convert.ToDouble(recipe[2]);
+                cuisine = recipe[3];
+                rating = Convert.ToInt32(recipe[4]);
+                realRating = Convert.ToDouble(recipe[4]);
+                numOfRaters = Convert.ToInt32(recipe[5]);
             }
             else
             {
@@ -45,20 +42,18 @@ namespace WebRole1
                 numOfRaters = 0;
             }
             Label1.Text = name;
-            Image1.ImageUrl = getImage("Garlic Bolognese");
+            Image1.ImageUrl = getImage(name);
             Rating1.CurrentRating = rating;
-            SqlDataReader ingredients = getFromSQL("RecipeName", "RecipesIngredients", "Burger");
+            string[,] ingredients = getIngredientsFromSQL(name);
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Ingredients: ");
-            if (ingredients != null)
+            int ingrLen = ingredients.Length / 2;
+            for (int j = 0; j < ingrLen; j++)
             {
-                while (ingredients.Read())
-                {
-                    sb.AppendLine("- " + ingredients.GetString(2) + " " + ingredients.GetString(0) + "\n");
-                }
+                sb.AppendLine("- " + ingredients[j, 1] + " " + ingredients[j, 0] + "\n");
             }
             Label2.Text = "Cuisine: " + cuisine;
-            Label3.Text = "Preperation Time: " + preperationTime + " Minutes.";
+            Label3.Text = "Preperation Time: " + preperationTime + " Miniuts.";
             Label4.Text = sb.ToString().Replace(Environment.NewLine, "<br />");
             Label5.Text = "Description: " + description;
         }
@@ -73,7 +68,7 @@ namespace WebRole1
             return blockBlob.Uri.AbsoluteUri;
         }
 
-        protected SqlDataReader getFromSQL(string rowName, string tableName, string keyName)
+        protected string[] getRecipeFromSQL(string keyName)
         {
             try
             {
@@ -90,13 +85,80 @@ namespace WebRole1
                 {
                     connection.Open();
                     StringBuilder sb = new StringBuilder();
-                    sb.Append($"SELECT * FROM  '{tableName}'  WHERE '{rowName}'  = '{keyName}';");
+                    sb.Append($"SELECT * FROM  Recipes  WHERE Name  = '{keyName}';");
                     String sql = sb.ToString();
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            return reader;
+                            reader.Read();
+                            string[] ans = new string[6];
+                            for (int i = 0; i < 6; i++)
+                            {
+                                if (i == 0 | i == 1 | i == 3)
+                                    ans[i] = reader.GetString(i);
+                                else if (i != 5)
+                                    ans[i] = reader.GetDecimal(i).ToString();
+                                else ans[i] = reader.GetInt32(i).ToString();
+                            }
+                            return ans;
+                        }
+                    }
+                }
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+                return null;
+            }
+        }
+
+        protected string[,] getIngredientsFromSQL(string keyName)
+        {
+            try
+            {
+                SqlConnectionStringBuilder builder =
+                    new SqlConnectionStringBuilder
+                    {
+                        DataSource = "thoughts4food.database.windows.net",
+                        UserID = "thoughts4food",
+                        Password = "Kfc369nba",
+                        InitialCatalog = "thoughts4foodSQL"
+                    };
+
+                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
+                {
+                    connection.Open();
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append($"SELECT * FROM  RecipesIngredients WHERE RecipeName  = '{keyName}';");
+                    StringBuilder sb1 = new StringBuilder();
+                    sb1.Append($"SELECT COUNT(*) FROM  RecipesIngredients WHERE RecipeName  = '{keyName}';");
+                    int readerLangth = 0;
+                    String sql = sb1.ToString();
+                    using (SqlCommand command1 = new SqlCommand(sql, connection))
+                    {
+                        using (SqlDataReader reader1 = command1.ExecuteReader())
+                        {
+                            reader1.Read();
+                            readerLangth = reader1.GetInt32(0);
+                        }
+                    }
+                    sql = sb.ToString();
+
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+
+                            reader.Read();
+                            string[,] ans = new string[readerLangth, 2];
+                            for (int j = 0; j < readerLangth; j++)
+                            {
+                                ans[j, 0] = reader.GetString(0);
+                                ans[j, 1] = reader.GetDecimal(2).ToString();
+                                reader.Read();
+                            }
+                            return ans;
                         }
                     }
                 }
@@ -162,7 +224,5 @@ namespace WebRole1
             // Create the table if it doesn't exist.
             return tableClient.GetTableReference("recipes");
         }
-
-
     }
 }
