@@ -33,7 +33,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <table border="0" cellpadding="0" cellspacing="0">
+        <table>
             <tr>
                 <th colspan="3">Registration
                 </th>
@@ -48,7 +48,7 @@
                     <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtUsername"
                         runat="server" />
                     <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[a-zA-Z0-9]+$"
-                                                    ControlToValidate="txtUsername" ForeColor="Red" ErrorMessage="Invalid Username." />
+                        ControlToValidate="txtUsername" ForeColor="Red" ErrorMessage="Invalid Username." />
                 </td>
             </tr>
             <tr>
@@ -61,7 +61,7 @@
                     <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="txtPassword"
                         runat="server" />
                     <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[a-zA-Z0-9]+$"
-                                                    ControlToValidate="txtPassword" ForeColor="Red" ErrorMessage="Invalid Password." />
+                        ControlToValidate="txtPassword" ForeColor="Red" ErrorMessage="Invalid Password." />
                 </td>
             </tr>
             <tr>
