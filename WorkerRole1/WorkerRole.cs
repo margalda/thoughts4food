@@ -1,17 +1,22 @@
+using System;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Azure;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace WorkerRole1
 {
     public class WorkerRole : RoleEntryPoint
     {
-        private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
-        private readonly ManualResetEvent runCompleteEvent = new ManualResetEvent(false);
+        private readonly CancellationTokenSource CancellationTokenSource = new CancellationTokenSource();
+        private readonly ManualResetEvent RunCompleteEvent = new ManualResetEvent(false);
 
         public override void Run()
         {
@@ -19,11 +24,11 @@ namespace WorkerRole1
 
             try
             {
-                RunAsync(cancellationTokenSource.Token).Wait();
+                RunAsync(CancellationTokenSource.Token).Wait();
             }
             finally
             {
-                runCompleteEvent.Set();
+                RunCompleteEvent.Set();
             }
         }
 
@@ -46,8 +51,8 @@ namespace WorkerRole1
         {
             Trace.TraceInformation("WorkerRole1 is stopping");
 
-            cancellationTokenSource.Cancel();
-            runCompleteEvent.WaitOne();
+            CancellationTokenSource.Cancel();
+            RunCompleteEvent.WaitOne();
 
             base.OnStop();
 
@@ -62,7 +67,6 @@ namespace WorkerRole1
             // retrieve a reference to the messages queue
             var queueClient = storageAccount.CreateCloudQueueClient();
             var queue = queueClient.GetQueueReference("messagequeue");
-            // retrieve messages and write them to the development fabric log
 
             while (!cancellationToken.IsCancellationRequested)
             {
@@ -74,13 +78,61 @@ namespace WorkerRole1
                     var msg = queue.GetMessage();
                     if (msg != null)
                     {
-                        Trace.TraceInformation("Message '{0}' processed.", msg.AsString);
+                        Image.GetThumbnailImageAbort myCallback = ThumbnailCallback;
+                        //get photo as stream
+                        MemoryStream memStream = new MemoryStream();
+                        var blob = GetContainer("photo").GetBlockBlobReference(msg.AsString);
+
+                        blob.DownloadToStream(memStream);
+
+                        //create a bitmap from photo
+                        Bitmap myBitmap = new Bitmap(memStream);
+                        //create thumbnail
+                        Image myThumbnail = myBitmap.GetThumbnailImage(40, 40, myCallback, IntPtr.Zero);
+
+                        var ms = new MemoryStream();
+                        myThumbnail.Save(ms, ImageFormat.Jpeg);
+
+                        // If you're going to read from the stream, you may need to reset the position to the start
+                        ms.Position = 0;
+
+                        SaveThumb(msg.AsString, ms);
+
                         queue.DeleteMessage(msg);
+
+                        Trace.TraceInformation($"Message '{msg.AsString}' processed.");
                     }
                 }
-
-                await Task.Delay(1000, cancellationToken);
+                else
+                {
+                    await Task.Delay(1000, cancellationToken);
+                }
             }
+        }
+
+        private CloudBlobContainer GetContainer(string type)
+        {
+            // Get a handle on account, create a blob service client and get container proxy
+            var account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
+            var client = account.CreateCloudBlobClient();
+
+            var container = type == "photo" ? client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName") + "-photo")
+                : client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName") + "-thumb");
+            container.CreateIfNotExists();
+            return container;
+        }
+
+        private void SaveThumb(string name, Stream fileStream)
+        {
+            // Create a blob in container and upload image bytes to it
+            var blob = GetContainer("thumb").GetBlockBlobReference(name);
+
+            blob.UploadFromStream(fileStream);
+        }
+
+        public bool ThumbnailCallback()
+        {
+            return false;
         }
     }
 }

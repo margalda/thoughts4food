@@ -14,12 +14,7 @@ namespace WebRole1
 {
     public partial class Recipes : Page
     {
-        private const string PICS_DIR = @"D:\blob_pics";
 
-        /// <summary>
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -27,9 +22,7 @@ namespace WebRole1
                 if (!IsPostBack)
                 {
                     EnsureContainerExists();
-                    //InitBlob(); //for testing, set PICS_DIR before using 
                 }
-
                 RefreshRecipes();
             }
             catch (WebException we)
@@ -47,36 +40,12 @@ namespace WebRole1
             }
         }
 
-        private void InitBlob()
-        {
-            foreach (string picPath in Directory.GetFiles(PICS_DIR))
-            {
-                using (var fileStream = File.OpenRead(picPath))
-                {
-                    SaveImage(
-                        Guid.NewGuid().ToString(),
-                        Path.GetFileNameWithoutExtension(picPath),
-                        string.Format("a picture of a {0}", Path.GetFileNameWithoutExtension(picPath)),
-                        string.Format("food, {0}", Path.GetFileNameWithoutExtension(picPath)),
-                        picPath,
-                        "food",
-                        fileStream
-                    );
-                }
-            }
-        }
-
-        /// <summary>
-        ///     Cast out blob instance and bind it's metadata to metadata repeater
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         protected void OnBlobDataBound(object sender, ListViewItemEventArgs e)
         {
             if (e.Item.ItemType == ListViewItemType.DataItem)
             {
                 var metadataRepeater = e.Item.FindControl("blobMetadata") as Repeater;
-                var blob = ((ListViewDataItem) e.Item).DataItem as CloudBlockBlob;
+                var blob = ((ListViewDataItem)e.Item).DataItem as CloudBlockBlob;
                 // If this blob is a snapshot, rename button to "Delete Snapshot"
                 if (blob != null)
                 {
@@ -84,29 +53,24 @@ namespace WebRole1
                     {
                         //bind to metadata
                         metadataRepeater.DataSource = from key in blob.Metadata.Keys
-                            select new
-                            {
-                                Name = key,
-                                Value = blob.Metadata[key]
-                            };
+                                                      select new
+                                                      {
+                                                          Name = key,
+                                                          Value = blob.Metadata[key]
+                                                      };
                         metadataRepeater.DataBind();
                     }
                 }
             }
         }
 
-        /// <summary>
-        ///     Delete an image blob by Uri
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         protected void OnDeleteImage(object sender, CommandEventArgs e)
         {
             try
             {
                 if (e.CommandName == "Delete")
                 {
-                    var blobUri = (string) e.CommandArgument;
+                    var blobUri = (string)e.CommandArgument;
                     var blob = GetContainer().GetBlockBlobReference(blobUri);
                     bool result = blob.DeleteIfExists();
                     status.Text = "";
@@ -123,10 +87,6 @@ namespace WebRole1
             RefreshRecipes();
         }
 
-        /// <summary>
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         protected void OnCopyImage(object sender, CommandEventArgs e)
         {
             if (e.CommandName == "Copy")
@@ -134,7 +94,7 @@ namespace WebRole1
                 // Prepare an Id for the copied blob
                 var newId = Guid.NewGuid();
                 // Get source blob
-                var blobUri = (string) e.CommandArgument;
+                var blobUri = (string)e.CommandArgument;
                 var srcBlob = GetContainer().GetBlockBlobReference(blobUri);
                 // Create new blob
                 var newBlob = GetContainer().GetBlockBlobReference(newId.ToString());
@@ -152,21 +112,6 @@ namespace WebRole1
             }
         }
 
-
-        /// <summary>
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void OnListItemDeleting(object sender, EventArgs e)
-        {
-        }
-
-        protected void images_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
-        #region
-
         private void EnsureContainerExists()
         {
             var container = GetContainer();
@@ -182,34 +127,14 @@ namespace WebRole1
 
             var account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
             var client = account.CreateCloudBlobClient();
-            return client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName"));
+            return client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName") + "-photo");
         }
-
 
         private void RefreshRecipes()
         {
             images.DataSource =
-                GetContainer().ListBlobs(null, true, BlobListingDetails.All, new BlobRequestOptions(), null);
+                GetContainer().ListBlobs(null, true, BlobListingDetails.All, new BlobRequestOptions());
             images.DataBind();
         }
-
-        private void SaveImage(string id, string name, string description, string tags, string fileName,
-            string contentType, Stream fiileStream)
-        {
-            // Create a blob in container and upload image bytes to it
-            var blob = GetContainer().GetBlockBlobReference(name);
-            blob.Properties.ContentType = contentType;
-            // Create some metadata for this image
-            blob.Metadata.Add("Id", id);
-            blob.Metadata.Add("Filename", fileName);
-            blob.Metadata.Add("ImageName", string.IsNullOrEmpty(name) ? "unknown" : name);
-            blob.Metadata.Add("Description", string.IsNullOrEmpty(description) ? "unknown" : description);
-            blob.Metadata.Add("Tags", string.IsNullOrEmpty(tags) ? "unknown" : tags);
-
-            blob.UploadFromStream(fiileStream);
-            blob.SetMetadata();
-        }
-
-        #endregion
     }
 }
