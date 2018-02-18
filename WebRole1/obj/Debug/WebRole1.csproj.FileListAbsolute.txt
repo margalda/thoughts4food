@@ -188,7 +188,7 @@ C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\bin\ko\System.Spatial.resourc
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\bin\ru\System.Spatial.resources.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.csproj.CoreCompileInputs.cache
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.pdb
+C:\Users\Avner\Source\Repos\thoughts4food\WebRole1\obj\Debug\WebRole1.csprojResolveAssemblyReference.cache

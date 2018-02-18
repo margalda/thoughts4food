@@ -180,7 +180,6 @@ C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\bin\Debug\ko\System.Spatia
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\bin\Debug\ru\System.Spatial.resources.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\bin\Debug\zh-Hans\System.Spatial.resources.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\bin\Debug\zh-Hant\System.Spatial.resources.dll
-C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\obj\Debug\WorkerRole1.csprojResolveAssemblyReference.cache
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\obj\Debug\WorkerRole1.csproj.CoreCompileInputs.cache
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\obj\Debug\WorkerRole1.dll
 C:\Users\Avner\Source\Repos\thoughts4food\WorkerRole1\obj\Debug\WorkerRole1.pdb

@@ -47,10 +47,13 @@ namespace WebRole1
             string[,] ingredients = getIngredientsFromSQL(name);
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Ingredients: ");
-            int ingrLen = ingredients.Length / 2;
-            for (int j = 0; j < ingrLen; j++)
+            if(ingredients != null)
             {
-                sb.AppendLine("- " + ingredients[j, 1] + " " + ingredients[j, 0] + "\n");
+                int ingrLen = ingredients.Length / 3;
+                for (int j = 0; j < ingrLen; j++)
+                {
+                    sb.AppendLine("- " + ingredients[j, 1] + " " + ingredients[j, 0] + "\n");
+                }
             }
             Label2.Text = "Cuisine: " + cuisine;
             Label3.Text = "Preperation Time: " + preperationTime + " Miniuts.";
@@ -130,7 +133,7 @@ namespace WebRole1
                 {
                     connection.Open();
                     StringBuilder sb = new StringBuilder();
-                    sb.Append($"SELECT * FROM  RecipesIngredients WHERE RecipeName  = '{keyName}';");
+                    sb.Append($"SELECT * FROM  RecipesIngredients JOIN Ingredients ON RecipesIngredients.IngredientName = Ingredients.Name WHERE RecipeName  = '{keyName}';");
                     StringBuilder sb1 = new StringBuilder();
                     sb1.Append($"SELECT COUNT(*) FROM  RecipesIngredients WHERE RecipeName  = '{keyName}';");
                     int readerLangth = 0;
@@ -151,11 +154,12 @@ namespace WebRole1
                         {
 
                             reader.Read();
-                            string[,] ans = new string[readerLangth, 2];
+                            string[,] ans = new string[readerLangth, 3];
                             for (int j = 0; j < readerLangth; j++)
                             {
                                 ans[j, 0] = reader.GetString(0);
                                 ans[j, 1] = reader.GetDecimal(2).ToString();
+                                ans[j, 2] = reader.GetString(0);
                                 reader.Read();
                             }
                             return ans;
