@@ -33,7 +33,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <table border="0" cellpadding="0" cellspacing="0">
+        <table>
             <tr>
                 <th colspan="3">Login
                 </th>
