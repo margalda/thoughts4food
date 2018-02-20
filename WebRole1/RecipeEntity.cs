@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.WindowsAzure.Storage.Table;
+﻿using Microsoft.WindowsAzure.Storage.Table;
 
 namespace WebRole1
 {
@@ -14,13 +12,6 @@ namespace WebRole1
     {
         Minutes,
         Hours
-    }
-
-    public enum Kind
-    {
-        Meat,
-        Dairy,
-        MeatAndDairy,
     }
 
     public enum Cuisine
@@ -42,19 +33,15 @@ namespace WebRole1
         public string Name { get; set; }
         public string Description { get; set; }
         public double PreperationTime { get; set; }
-        public string Time { get; set; }
-        public string Kind { get; set; }
         public string Cuisine { get; set; }
 
         public RecipeEntity() { }
 
-        public RecipeEntity(string name, string description, double preperationTime, string time, string kind, string cuisine)
+        public RecipeEntity(string name, string description, double preperationTime, string cuisine)
         {
             Name = name;
             Description = description;
             PreperationTime = preperationTime;
-            Time = time;
-            Kind = kind;
             Cuisine = cuisine;
 
             PartitionKey = Cuisine;
