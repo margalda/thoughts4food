@@ -84,13 +84,17 @@
         .auto-style3 {
             height: 200px;
         }
+
+        .auto-style4 {
+            width: 76.6em;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <h1>Add a Recipe</h1>
-            <div class="form">
+            <div class="auto-style4">
                 <ul>
                     <li class="auto-style1">
                         <span>Name</span><asp:TextBox ID="recipeName" runat="server" Width="205px" />
@@ -98,95 +102,71 @@
                             runat="server" />
                     </li>
                     <li class="auto-style1">
-                        <span>Preparation Time</span><asp:TextBox ID="timeBox" runat="server" Width="107px" /><asp:DropDownList ID="timeList" runat="server" Width="118px" />
+                        <span>Preparation Time</span><asp:TextBox ID="timeBox" runat="server" Width="107px" /><asp:Label ID="timeUnit" runat="server" Width="118px">(minutes)</asp:Label>
                         <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="timeBox"
                             runat="server" />
-                        <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
+                        <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9]+(\.?[0-9]+)?$"
                             ControlToValidate="timeBox" ForeColor="Red" ErrorMessage="Invalid time" />
-                    </li>
-                    <li class="auto-style1">
-                        <span>Kind</span><asp:DropDownList ID="kindList" runat="server" Width="118px" />
                     </li>
                     <li class="auto-style1">
                         <span>Cuisine</span><asp:DropDownList ID="cuisineList" runat="server" Width="118px" />
                     </li>
-                    <li class="auto-style2">
+                    <li>
                         <div class="auto-style1">
-                            <span>Ingredients</span><asp:TextBox ID="name1" runat="server" Width="150px" /><asp:TextBox ID="quantity1" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList1" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name1" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RequiredFieldValidator ErrorMessage="Required at least one" ForeColor="Red" ControlToValidate="name1"
-                                runat="server" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity1" ForeColor="Red" ErrorMessage="Invalid quantity." />
+                            <span>Ingredients</span>
                         </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name2" runat="server" Width="150px" /><asp:TextBox ID="quantity2" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList2" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name2" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity2" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name3" runat="server" Width="150px" /><asp:TextBox ID="quantity3" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList3" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name3" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity3" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name4" runat="server" Width="150px" /><asp:TextBox ID="quantity4" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList4" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name4" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity4" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name5" runat="server" Width="150px" /><asp:TextBox ID="quantity5" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList5" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name5" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity5" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name6" runat="server" Width="150px" /><asp:TextBox ID="quantity6" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList6" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name6" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity6" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name7" runat="server" Width="150px" /><asp:TextBox ID="quantity7" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList7" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name7" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity7" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
-                        <div class="auto-style1">
-                            <span></span>
-                            <asp:TextBox ID="name8" runat="server" Width="150px" /><asp:TextBox ID="quantity8" runat="server" Width="58px" />
-                            <asp:DropDownList ID="measurementList8" runat="server" Width="118px" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
-                                ControlToValidate="name8" ForeColor="Red" ErrorMessage="Invalid name" />
-                            <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^\d+$"
-                                ControlToValidate="quantity8" ForeColor="Red" ErrorMessage="Invalid quantity." />
-                        </div>
+                        <asp:GridView ID="Gridview1" runat="server" ShowFooter="true"
+                            AutoGenerateColumns="false" OnRowCreated="Gridview1_RowCreated">
+                            <Columns>
+                                <asp:BoundField DataField="RowNumber" />
+                                <asp:TemplateField HeaderText="Name">
+                                    <ItemTemplate>
+                                        <asp:TextBox ID="txtName" runat="server" ValidationGroup="first"></asp:TextBox>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Category">
+                                    <ItemTemplate>
+                                        <asp:DropDownList ID="categoryList" runat="server" Width="130px" AutoPostBack="true" OnSelectedIndexChanged="CategoryList_SelectedIndexChanged">
+                                            <asp:ListItem Value="SaucesAndSpices">SaucesAndSpices</asp:ListItem>
+                                            <asp:ListItem Value="MeatAndPasta">MeatAndPasta</asp:ListItem>
+                                            <asp:ListItem Value="SnacksAndCookies">SnacksAndCookies</asp:ListItem>
+                                            <asp:ListItem Value="Baking">Baking</asp:ListItem>
+                                            <asp:ListItem Value="Dairy">Dairy</asp:ListItem>
+                                            <asp:ListItem Value="FruitsAndVegetables">FruitsAndVegetables</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField HeaderText="Quantity">
+                                    <ItemTemplate>
+                                        <asp:TextBox ID="txtQuantity" runat="server" ValidationGroup="first"></asp:TextBox>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField>
+                                    <ItemTemplate>
+                                        <asp:Label ID="txtUnit" runat="server">(teaspoons)</asp:Label>
+                                        <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9a-zA-Z\s]+$"
+                                            ControlToValidate="txtName" ForeColor="Red" ErrorMessage="Invalid name" />
+                                        <asp:RequiredFieldValidator ErrorMessage="Please fill row" ForeColor="Red" ControlToValidate="txtName"
+                                            runat="server" />
+                                        <asp:RegularExpressionValidator runat="server" Display="Dynamic" ValidationExpression="^[0-9]+(\.?[0-9]+)?$"
+                                            ControlToValidate="txtQuantity" ForeColor="Red" ErrorMessage="Invalid quantity." />
+                                    </ItemTemplate>
+                                    <FooterStyle HorizontalAlign="Right" />
+                                    <FooterTemplate>
+                                        <asp:Button ID="ButtonAdd" runat="server" Text="Add Ingredient"
+                                            OnClick="ButtonAdd_Click" ValidationGroup="grid" />
+                                    </FooterTemplate>
+                                </asp:TemplateField>
+                                <asp:TemplateField>
+                                    <ItemTemplate>
+                                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" ValidationGroup="grid">Remove</asp:LinkButton>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+                        </asp:GridView>
                     </li>
                     <li class="auto-style3">
-                        <span>Description</span><asp:TextBox ID="recipeDescription" runat="server" Height="161px" />
+                        <span>Description</span><asp:TextBox ID="recipeDescription" runat="server" TextMode="MultiLine" Height="161px" Width="568px" />
                         <asp:RequiredFieldValidator ErrorMessage="Required" ForeColor="Red" ControlToValidate="recipeDescription"
                             runat="server" />
                     </li>
@@ -197,10 +177,6 @@
                     </li>
                 </ul>
                 <asp:Button ID="upload" runat="server" OnClick="Upload_Click" Text="Upload Recipe" />
-            </div>
-            <div style="float: left;">
-                Status:
-            <asp:Label ID="status" runat="server" />
             </div>
         </div>
     </form>
