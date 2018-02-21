@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
-using System.Text;
+using System.Collections.Generic;
 using System.Web.UI;
 
 namespace WebRole1
@@ -13,92 +12,20 @@ namespace WebRole1
 
         protected void Register_Click(object sender, EventArgs e)
         {
-            if (!UserExists(txtUsername.Text))
+            if (!QueriesRunner.ValueExists("Users", "Username", txtUsername.Text))
             {
                 ClientScript.RegisterStartupScript(GetType(), "alert",
-                    InsertUser(txtUsername.Text, txtPassword.Text, txtEmail.Text, Int32.Parse(txtAge.Text))
-                        ? "alert('User registered successfuly!');"
-                        : "alert('Registration failed. Please try again.');", true);
+                QueriesRunner.InsertToTable(
+                    "Users",
+                    new List<string> { txtUsername.Text, txtPassword.Text, txtEmail.Text, txtAge.Text }
+                ) ? "alert('User registered successfuly!');" : "alert('User registration failed');"
+                    , true);
             }
             else
             {
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Username already exists.');", true);
             }
 
-        }
-
-        private bool UserExists(string username)
-        {
-            try
-            {
-                SqlConnectionStringBuilder builder =
-                    new SqlConnectionStringBuilder
-                    {
-                        DataSource = "thoughts4food.database.windows.net",
-                        UserID = "thoughts4food",
-                        Password = "Kfc369nba",
-                        InitialCatalog = "thoughts4foodSQL"
-                    };
-
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
-                {
-                    connection.Open();
-
-                    StringBuilder sb = new StringBuilder();
-                    sb.Append($"SELECT * FROM Users WHERE Username = '{username}';");
-                    String sql = sb.ToString();
-
-                    using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            return reader.Read();
-                        }
-                    }
-                }
-            }
-            catch (SqlException e)
-            {
-                Console.WriteLine(e.ToString());
-                return false;
-            }
-        }
-
-        private bool InsertUser(string username, string password, string email, int age)
-        {
-            try
-            {
-                SqlConnectionStringBuilder builder =
-                    new SqlConnectionStringBuilder
-                    {
-                        DataSource = "thoughts4food.database.windows.net",
-                        UserID = "thoughts4food",
-                        Password = "Kfc369nba",
-                        InitialCatalog = "thoughts4foodSQL"
-                    };
-
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
-                {
-                    connection.Open();
-
-                    StringBuilder sb = new StringBuilder();
-                    sb.Append("INSERT INTO Users ");
-                    sb.Append($"VALUES('{username}', '{password}', '{email}', '{age}');");
-                    String sql = sb.ToString();
-
-                    using (SqlCommand command = new SqlCommand(sql, connection))
-                    {
-                        command.ExecuteNonQuery();
-                    }
-                }
-
-                return true;
-            }
-            catch (SqlException e)
-            {
-                Console.WriteLine(e.ToString());
-                return false;
-            }
         }
     }
 }
