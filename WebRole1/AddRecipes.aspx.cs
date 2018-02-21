@@ -11,7 +11,6 @@ using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Queue;
-using Microsoft.WindowsAzure.Storage.Table;
 
 namespace WebRole1
 {
@@ -38,7 +37,6 @@ namespace WebRole1
                     SetInitialRow();
 
                     EnsureContainerExists();
-                    EnsureTableExists();
                 }
             }
             catch (WebException we)
@@ -56,16 +54,6 @@ namespace WebRole1
             }
         }
 
-        private void EnsureTableExists()
-        {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
-            // Create the table client.
-            CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-            // Create the table if it doesn't exist.
-            CloudTable table = tableClient.GetTableReference("recipes");
-            table.CreateIfNotExists();
-        }
-
         private void EnsureContainerExists()
         {
             var container = GetContainer();
@@ -78,11 +66,7 @@ namespace WebRole1
         protected void Upload_Click(object sender, EventArgs e)
         {
             //check if recipe exists
-            CloudTable recipeTable = GetTable("recipes");
-            TableOperation retrieveRecipe = TableOperation.Retrieve<RecipeEntity>(cuisineList.Text, recipeName.Text);
-            TableResult retrievedResultRecipe = recipeTable.Execute(retrieveRecipe);
-
-            if (retrievedResultRecipe.Result != null)
+            if (QueriesRunner.ValueExists("Recipes", "Name", recipeName.Text))
             {
                 ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Recipe already exists');", true);
             }
@@ -97,53 +81,49 @@ namespace WebRole1
                     imageFile.PostedFile.InputStream
                 );
 
-                //add recipe to azure table
-                SaveRecipe(
-                    recipeName.Text,
-                    recipeDescription.Text,
-                    double.Parse(timeBox.Text),
-                    cuisineList.Text
-                );
+                //add recipe to sql table
+                string initRating = "3";
+                string initNumOfRaters = "0";
+                bool recipeInserted = QueriesRunner.InsertToTable(
+                    "Recipes",
+                    new List<string> { recipeName.Text, recipeDescription.Text, timeBox.Text, cuisineList.Text, initRating, initNumOfRaters }
+                    );
 
-                //add ingredients to azure table
-                List<Tuple<string, string, double>> ingredients = GetAllIngredients();
+                //add ingredients to sql table
+                bool ingredientInserted = true;
+                bool recipeingredientInserted = true;
+                List<Tuple<string, string, string>> ingredients = GetAllIngredients();
 
                 foreach (var ingredient in ingredients)
                 {
                     //check if ingredient exists
-                    CloudTable ingredientsTable = GetTable("ingredients");
-                    TableOperation retrieveOperation = TableOperation.Retrieve<IngredientEntity>(ingredient.Item2, ingredient.Item1);
-                    TableResult retrievedResult = ingredientsTable.Execute(retrieveOperation);
-
-                    if (retrievedResult.Result == null)
+                    if (!QueriesRunner.ValueExists("Ingredients", "Name", ingredient.Item1.ToLower()))
                     {
-                        SaveIngredient(
-                            ingredient.Item1,
-                            ingredient.Item2
-                        );
+                        ingredientInserted = QueriesRunner.InsertToTable(
+                            "Ingredients",
+                            new List<string> { ingredient.Item1.ToLower(), ingredient.Item2 }
+                            );
                     }
+                    recipeingredientInserted = QueriesRunner.InsertToTable(
+                        "RecipesIngredients",
+                        new List<string> { ingredient.Item1.ToLower(), recipeName.Text, ingredient.Item3 }
+                    );
                 }
 
-                //TODO: add pair(recipe_ingredient) to azure table
-
-                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Recipe successfully added');", true);
+                if (recipeInserted && ingredientInserted && recipeingredientInserted)
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Recipe successfully added');", true);
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(GetType(), "alert", "alert('Failed adding recipe');", true);
+                }
             }
         }
 
-        private void SaveIngredient(string name, string category)
+        private List<Tuple<string, string, string>> GetAllIngredients()
         {
-            CloudTable ingredientsTable = GetTable("ingredients");
-            // object to place into table
-            IngredientEntity ingredient = new IngredientEntity(name, category);
-            // Build insert operation.
-            TableOperation insertOperation = TableOperation.Insert(ingredient);
-            // Execute the insert operation.
-            ingredientsTable.Execute(insertOperation);
-        }
-
-        private List<Tuple<string, string, double>> GetAllIngredients()
-        {
-            var res = new List<Tuple<string, string, double>>();
+            var res = new List<Tuple<string, string, string>>();
 
             for (int i = 0; i < Gridview1.Rows.Count; i++)
             {
@@ -151,21 +131,10 @@ namespace WebRole1
                 DropDownList dropDown = (DropDownList)Gridview1.Rows[i].Cells[2].FindControl("categoryList");
                 TextBox box2 = (TextBox)Gridview1.Rows[i].Cells[3].FindControl("txtQuantity");
 
-                res.Add(new Tuple<string, string, double>(box1.Text, dropDown.Text, double.Parse(box2.Text)));
+                res.Add(new Tuple<string, string, string>(box1.Text, dropDown.Text, box2.Text));
             }
 
             return res;
-        }
-
-        private void SaveRecipe(string name, string desc, double prep, string cuisine)
-        {
-            CloudTable recipeTable = GetTable("recipes");
-            // object to place into table
-            RecipeEntity recipe = new RecipeEntity(name, desc, prep, cuisine);
-            // Build insert operation.
-            TableOperation insertOperation = TableOperation.Insert(recipe);
-            // Execute the insert operation.
-            recipeTable.Execute(insertOperation);
         }
 
         private CloudBlobContainer GetContainer()
@@ -175,15 +144,6 @@ namespace WebRole1
             var account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
             var client = account.CreateCloudBlobClient();
             return client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName") + "-photo");
-        }
-
-        private CloudTable GetTable(string name)
-        {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
-            // Create the table client.
-            CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
-            // Create the table if it doesn't exist.
-            return tableClient.GetTableReference(name);
         }
 
         private void SaveImage(string id, string name, string fileName, string contentType, Stream fileStream)
