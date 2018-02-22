@@ -1,19 +1,19 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] At least one other instance of the launcher is running. Will wait until they all finish
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Service running in Emulator Mode, will not wait/kill other instances of the launcher
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Emulator config file set to C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] DiagnosticsStoreRootPath set to: C:\Users\Avner\AppData\Local\dftmp\Resources\ca54c86d-2618-420d-812f-131f4bf718ba
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Loading config file: C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Config file to read: C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Emulator config file set to C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:10] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:11] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:11] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:26:11] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:27:22] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:27:22] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Emulator config file set to C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] DiagnosticsStoreRootPath set to: C:\Users\Avner\AppData\Local\dftmp\Resources\dfc294f5-1bfd-434e-8d05-ba62a2ea4a6f
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Loading config file: C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Config file to read: C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Emulator config file set to C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:25] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:26] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:26] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:26] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:26] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:31:26] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:32:36] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [18/02/2018 09:32:36] DiagnosticPlugin exited with code 0
