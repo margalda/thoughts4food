@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net;
@@ -71,16 +72,13 @@ namespace WebRole1
                 {
                     var blobUri = (string)e.CommandArgument;
                     var blob = GetContainer().GetBlockBlobReference(blobUri);
-                    bool result = blob.DeleteIfExists();
+                    blob.DeleteIfExists();
                     status.Text = "";
                 }
             }
             catch (StorageException se)
             {
                 status.Text = "Storage client error: " + se.Message;
-            }
-            catch (Exception)
-            {
             }
 
             RefreshRecipes();
@@ -102,8 +100,7 @@ namespace WebRole1
                 // Explicitly get metadata for new blob
                 newBlob.FetchAttributes();
                 // Change metadata on the new blob to reflect this is a copy via UI
-                newBlob.Metadata["ImageName"] = "Copy of \"" +
-                                                newBlob.Metadata["ImageName"] + "\"";
+                newBlob.Metadata["ImageName"] = "Copy of \"" + newBlob.Metadata["ImageName"] + "\"";
                 newBlob.Metadata["Id"] = newId.ToString();
                 newBlob.SetMetadata();
                 // Render all blobs
@@ -123,16 +120,15 @@ namespace WebRole1
         private CloudBlobContainer GetContainer()
         {
             // Get a handle on account, create a blob service client and get container proxy
-
             var account = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("DataConnectionString"));
             var client = account.CreateCloudBlobClient();
+
             return client.GetContainerReference(RoleEnvironment.GetConfigurationSettingValue("ContainerName") + "-photo");
         }
 
         private void RefreshRecipes()
         {
-            images.DataSource =
-                GetContainer().ListBlobs(null, true, BlobListingDetails.All, new BlobRequestOptions());
+            images.DataSource = GetContainer().ListBlobs(null, true, BlobListingDetails.All, new BlobRequestOptions());
             images.DataBind();
         }
     }
