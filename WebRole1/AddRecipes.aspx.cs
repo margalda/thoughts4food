@@ -82,8 +82,9 @@ namespace WebRole1
                 );
 
                 //add recipe to sql table
-                string initRating = "3";
-                string initNumOfRaters = "0";
+                const string initRating = "3";
+                const string initNumOfRaters = "0";
+
                 bool recipeInserted = QueriesRunner.InsertToTable(
                     "Recipes",
                     new List<string> { recipeName.Text, recipeDescription.Text, timeBox.Text, cuisineList.Text, initRating, initNumOfRaters }
@@ -97,16 +98,16 @@ namespace WebRole1
                 foreach (var ingredient in ingredients)
                 {
                     //check if ingredient exists
-                    if (!QueriesRunner.ValueExists("Ingredients", "Name", ingredient.Item1.ToLower()))
+                    if (!QueriesRunner.ValueExists("Ingredients", "Name", ingredient.Item1))
                     {
                         ingredientInserted = QueriesRunner.InsertToTable(
                             "Ingredients",
-                            new List<string> { ingredient.Item1.ToLower(), ingredient.Item2 }
+                            new List<string> { ingredient.Item1, ingredient.Item2 }
                             );
                     }
                     recipeingredientInserted = QueriesRunner.InsertToTable(
                         "RecipesIngredients",
-                        new List<string> { ingredient.Item1.ToLower(), recipeName.Text, ingredient.Item3 }
+                        new List<string> { ingredient.Item1, recipeName.Text, ingredient.Item3 }
                     );
                 }
 
@@ -158,6 +159,7 @@ namespace WebRole1
 
             blob.UploadFromStream(fileStream);
             blob.SetMetadata();
+
             //send to queue
             SendToQueue(name);
         }
