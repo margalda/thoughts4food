@@ -12,7 +12,7 @@
     <AssemblyName>thoughts4food</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>thoughts4food</Name>
-    <UseWebProjectPorts>False</UseWebProjectPorts>
+    <UseWebProjectPorts>True</UseWebProjectPorts>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

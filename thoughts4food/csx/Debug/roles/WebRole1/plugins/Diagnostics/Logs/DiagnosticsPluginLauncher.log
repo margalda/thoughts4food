@@ -1,0 +1,16 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:56] Emulator config file set to C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:56] DiagnosticsStoreRootPath set to: C:\Users\Daniel\AppData\Local\dftmp\Resources\941590f8-2b5f-4fe6-8fbb-389d8257174e
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:56] Loading config file: C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:56] Config file to read: C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:56] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:57] Emulator config file set to C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebRole1\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:57] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:57] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:57] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:57] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:58] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:58] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:02:58] Found a DiagnosticsPlugin.exe. WadArguments: "C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WorkerRole1\plugins\Diagnostics\DiagnosticsPlugin.exe" DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:03:43] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:03:43] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [22/02/2018 10:03:43] Resetting DiagnosticPlugin

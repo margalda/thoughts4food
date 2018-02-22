@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
     </Reference>
@@ -96,6 +99,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\FilledStar.gif" />
+    <Content Include="Resources\Star.gif" />
+    <Content Include="Resources\WaitingStar.gif" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -106,6 +112,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddRecipes.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Recipe.aspx" />
     <Content Include="Recipes.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
@@ -118,7 +126,25 @@
     <Compile Include="AddRecipes.aspx.designer.cs">
       <DependentUpon>AddRecipes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IngredientEntity.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueriesRunner.cs" />
+    <Compile Include="Recipe.aspx.cs">
+      <DependentUpon>Recipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recipe.aspx.designer.cs">
+      <DependentUpon>Recipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecipeEntity.cs" />
+    <Compile Include="RecipeIngredientEntity.cs" />
     <Compile Include="Recipes.aspx.cs">
       <DependentUpon>Recipes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
