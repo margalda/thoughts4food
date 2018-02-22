@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Data;
-using System.Configuration;
 using System.Data.SqlClient;
 using AjaxControlToolkit;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -12,7 +6,6 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.Azure;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Microsoft.WindowsAzure.Storage.Blob;
-using System.IO;
 using System.Text;
 
 namespace WebRole1
@@ -21,8 +14,10 @@ namespace WebRole1
     {
         private double realRating;
         private int numOfRaters;
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
             SqlDataReader recipe = getFromSQL("Name", "Recipes", "Burger");
             string name = "";
             string description = "";
@@ -50,12 +45,12 @@ namespace WebRole1
                 numOfRaters = 0;
             }
             Label1.Text = name;
-            Image1.ImageUrl = getImage(name);
+            Image1.ImageUrl = getImage("Garlic Bolognese");
             Rating1.CurrentRating = rating;
             SqlDataReader ingredients = getFromSQL("RecipeName", "RecipesIngredients", "Burger");
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Ingredients: ");
-            if (ingredients!= null)
+            if (ingredients != null)
             {
                 while (ingredients.Read())
                 {
@@ -63,28 +58,22 @@ namespace WebRole1
                 }
             }
             Label2.Text = "Cuisine: " + cuisine;
-            Label3.Text = "Preperation Time: " + preperationTime + " Miniuts.";
+            Label3.Text = "Preperation Time: " + preperationTime + " Minutes.";
             Label4.Text = sb.ToString().Replace(Environment.NewLine, "<br />");
             Label5.Text = "Description: " + description;
         }
-            private string getImage(string name)
+
+        private string getImage(string name)
         {
 
             CloudBlobContainer container = GetContainer();
 
             // Retrieve reference to a blob named "photo1.jpg".
             CloudBlockBlob blockBlob = container.GetBlockBlobReference(name);
-            // Save blob contents to a file.
-            string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-            
-            string FileName = string.Format("{0}thoughts4food\\WebRole1\\images\\" + name +".jpg" , Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
-            using (FileStream fs = File.Create(FileName))
-            {
-                blockBlob.DownloadToStream(fs);
-            }
-            return "~/images/" + name + ".jpg";
+            return blockBlob.Uri.AbsoluteUri;
         }
-        protected SqlDataReader getFromSQL(string rowName,string tableName,string keyName)
+
+        protected SqlDataReader getFromSQL(string rowName, string tableName, string keyName)
         {
             try
             {
@@ -118,7 +107,7 @@ namespace WebRole1
                 return null;
             }
         }
-        
+
         protected void OnRatingChanged(object sender, RatingEventArgs e)
         {
             double helper = realRating * numOfRaters;
