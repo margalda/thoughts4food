@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "thoughts4food", "thoughts4food\thoughts4food.ccproj", "{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "thoughts4food", "thoughts4food\thoughts4food.ccproj", "{D9EE673D-8B06-4EF6-AAFF-25160EB241B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole1", "WebRole1\WebRole1.csproj", "{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFacade", "WebFacade\WebFacade.csproj", "{DA9F7459-6A2E-4132-BC3D-FA9C07494568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{06EBA629-1954-437C-B15D-02F49798CD13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcWorker", "CalcWorker\CalcWorker.csproj", "{3102177E-8F76-4E14-A13C-4D9C69391DF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NightWorker", "NightWorker\NightWorker.csproj", "{46B18E13-DC46-414C-8492-B313259F86DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,23 +17,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C8C87A0-82AA-4E61-81D4-1A276C2911BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB77C359-6E8E-4181-AFDB-5FCC8D881CC3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06EBA629-1954-437C-B15D-02F49798CD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06EBA629-1954-437C-B15D-02F49798CD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06EBA629-1954-437C-B15D-02F49798CD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06EBA629-1954-437C-B15D-02F49798CD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EE673D-8B06-4EF6-AAFF-25160EB241B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EE673D-8B06-4EF6-AAFF-25160EB241B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EE673D-8B06-4EF6-AAFF-25160EB241B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EE673D-8B06-4EF6-AAFF-25160EB241B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9F7459-6A2E-4132-BC3D-FA9C07494568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9F7459-6A2E-4132-BC3D-FA9C07494568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9F7459-6A2E-4132-BC3D-FA9C07494568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9F7459-6A2E-4132-BC3D-FA9C07494568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3102177E-8F76-4E14-A13C-4D9C69391DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3102177E-8F76-4E14-A13C-4D9C69391DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3102177E-8F76-4E14-A13C-4D9C69391DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3102177E-8F76-4E14-A13C-4D9C69391DF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B18E13-DC46-414C-8492-B313259F86DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B18E13-DC46-414C-8492-B313259F86DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B18E13-DC46-414C-8492-B313259F86DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B18E13-DC46-414C-8492-B313259F86DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {477F2BC0-5134-437B-8985-8D9BACDE3BF5}
+		SolutionGuid = {A834EB5E-E046-494D-8A31-340E2EE672AF}
 	EndGlobalSection
 EndGlobal

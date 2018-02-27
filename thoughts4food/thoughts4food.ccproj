@@ -5,14 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.9</ProductVersion>
-    <ProjectGuid>5c8c87a0-82aa-4e61-81d4-1a276c2911ba</ProjectGuid>
+    <ProjectGuid>d9ee673d-8b06-4ef6-aaff-25160eb241b8</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>thoughts4food</RootNamespace>
     <AssemblyName>thoughts4food</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
     <Name>thoughts4food</Name>
-    <UseWebProjectPorts>True</UseWebProjectPorts>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,30 +37,44 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebRole1\WebRole1.csproj">
-      <Name>WebRole1</Name>
-      <Project>{fb77c359-6e8e-4181-afdb-5fcc8d881cc3}</Project>
-      <Private>True</Private>
-      <RoleType>Web</RoleType>
-      <RoleName>WebRole1</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
-    <ProjectReference Include="..\WorkerRole1\WorkerRole1.csproj">
-      <Name>WorkerRole1</Name>
-      <Project>{06eba629-1954-437c-b15d-02f49798cd13}</Project>
+    <ProjectReference Include="..\CalcWorker\CalcWorker.csproj">
+      <Name>CalcWorker</Name>
+      <Project>{3102177e-8f76-4e14-a13c-4d9c69391df8}</Project>
       <Private>True</Private>
       <RoleType>Worker</RoleType>
-      <RoleName>WorkerRole1</RoleName>
+      <RoleName>CalcWorker</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\NightWorker\NightWorker.csproj">
+      <Name>NightWorker</Name>
+      <Project>{46b18e13-dc46-414c-8492-b313259f86dd}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>NightWorker</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\WebFacade\WebFacade.csproj">
+      <Name>WebFacade</Name>
+      <Project>{da9f7459-6a2e-4132-bc3d-fa9c07494568}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>WebFacade</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="WebRole1Content\" />
-    <Folder Include="WorkerRole1Content\" />
+    <Folder Include="CalcWorkerContent\" />
+    <Folder Include="NightWorkerContent\" />
+    <Folder Include="Profiles" />
+    <Folder Include="WebFacadeContent\" />
   </ItemGroup>
   <ItemGroup>
-    <DiagnosticsConfiguration Include="WebRole1Content\diagnostics.wadcfgx" />
-    <DiagnosticsConfiguration Include="WorkerRole1Content\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="CalcWorkerContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="NightWorkerContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="WebFacadeContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\thoughts4foodProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

@@ -9,7 +9,7 @@
   **********************************************************************************************
 -->
 <ServiceDefinition name="thoughts4food" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
-  <WebRole name="WebRole1" vmsize="Small">
+  <WebRole name="WebFacade" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -19,36 +19,57 @@
     </Sites>
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
-      <Setting name="DataConnectionString" />
       <Setting name="ContainerName" />
+      <Setting name="DataConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\rcf\Debug\WebRole1Content\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\WebFacadeContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\ecf\WebRole1Content\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\WebFacadeContent\" />
       </Content>
     </Contents>
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
   </WebRole>
-  <WorkerRole name="WorkerRole1" vmsize="Small">
+  <WorkerRole name="CalcWorker" vmsize="Small">
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
-      <Setting name="DataConnectionString" />
       <Setting name="ContainerName" />
+      <Setting name="DataConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\rcf\Debug\WorkerRole1Content\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\CalcWorkerContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Avner\Source\Repos\thoughts4food\thoughts4food\ecf\WorkerRole1Content\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\CalcWorkerContent\" />
+      </Content>
+    </Contents>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+  </WorkerRole>
+  <WorkerRole name="NightWorker" vmsize="Small">
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="ContainerName" />
+      <Setting name="DataConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
+    </ConfigurationSettings>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\NightWorkerContent\" />
+      </Content>
+      <Content destination=".\">
+        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\NightWorkerContent\" />
       </Content>
     </Contents>
     <Imports>

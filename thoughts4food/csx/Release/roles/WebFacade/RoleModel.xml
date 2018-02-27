@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WebFacade" version="2.9.8699.20" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="WebFacade.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.5.1" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="WebFacade" />
+    <Property name="ProjectName" value="WebFacade" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="SetConfiguration" value="Configuration=Release" />
+    <Property name="SetPlatform" value="Platform=AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.5.1" />
+    <Property name="OutputDir" value="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\obj\Release\WebFacade\" />
+    <Property name="EntryPoint" value="WebFacade.dll" />
+    <Property name="SourceDir" value="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\WebFacade\" />
+    <Property name="SitePhysicalPath" value="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\obj\Release\WebFacade\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\obj\Release\WebFacade\">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="Endpoint1" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>

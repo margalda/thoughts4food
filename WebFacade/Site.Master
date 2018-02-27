@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="WebFacade.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Resources/style.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background: url(Resources/background.jpg)  100% 0;">
+    <form id="form1" runat="server">
+        <div class="content">
+            <div class="header">
+                <div class="top_info">
+                    <div class="top_info_right">
+                        <p>
+                            <b>You are not Logged in as </b><a href="ProfilePage.aspx?username=<%=Request.QueryString["username"] %>&;">
+                                <asp:Label ID="txtUsername" runat="server" Text="Username"></asp:Label></a>
+                            <br />
+                    </div>
+
+                </div>
+                <div class="logo">
+                    <h1>
+                        <img src="Resources/logo.jpeg" class="image" alt="Big Image" /></h1>
+                </div>
+            </div>
+
+
+            <div class="bar">
+                <ul>
+                    <li><a href="ProfilePage.aspx?username=<%=Request.QueryString["username"] %>" accesskey="i">Profile</a></li>
+                    <li><a href="UserRecipesPage.aspx?username=<%=Request.QueryString["username"] %>" accesskey="i">User Recipes</a></li>
+                    <li><a href="UserIngredientsPage.aspx?username=<%=Request.QueryString["username"] %>" accesskey="m">User Ingredients</a></li>
+                    <li><a href="AddRecipePage.aspx?username=<%=Request.QueryString["username"] %>" accesskey="p">Add Recipe</a></li>
+                </ul>
+            </div>
+            <br />
+            <br />
+            <div style="background: white">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <br />
+        </div>
+    </form>
+</body>
+</html>

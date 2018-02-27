@@ -1,0 +1,19 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:36] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:36] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Emulator config file set to C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\CalcWorker\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] DiagnosticsStoreRootPath set to: C:\Users\Daniel\AppData\Local\dftmp\Resources\c0144754-f6bc-4f37-9929-124c0665c194
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Loading config file: C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\CalcWorker\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Config file to read: C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\CalcWorker\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Emulator config file set to C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\CalcWorker\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:38] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:38] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:39] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:41] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:41] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:09:54] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:09:56] DiagnosticPlugin exited with code 0
