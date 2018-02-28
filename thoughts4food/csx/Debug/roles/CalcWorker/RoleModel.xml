@@ -22,7 +22,7 @@
     <Property name="Configuration" value="Debug" />
     <Property name="Platform" value="AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
-    <Property name="OutputDir" value="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\obj\Debug\CalcWorker\" />
+    <Property name="OutputDir" value="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\obj\Debug\CalcWorker\" />
     <Property name="EntryPoint" value="CalcWorker.dll" />
     <Property name="SourceDir" value="" />
     <Property name="SitePhysicalPath" value="" />

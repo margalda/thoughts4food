@@ -18,7 +18,7 @@ namespace WebFacade
                     "Users",
                     new List<string> {txtUsername.Text, txtPassword.Text, txtEmail.Text, txtAge.Text, null, "1023"}
                 )
-                    ? "alert('User registered successfully!'); window.open('LoginPage.aspx','_self');"
+                    ? "alert('User registered successfully!'); window.open('Default.aspx','_self');"
                     : "alert('User registration failed');", true);
             }
             else

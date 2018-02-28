@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="d27eef43-efd7-457f-9c2f-1c0dbcd388e8" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="7700c150-f86c-4b50-ada0-291ccec1936c" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="thoughts4foodGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -172,7 +172,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="CalcWorker" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Release\roles\CalcWorker" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="CalcWorker" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Release\roles\CalcWorker" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <settings>
               <aCS name="APPINSIGHTS_INSTRUMENTATIONKEY" defaultValue="" />
               <aCS name="ContainerName" defaultValue="" />
@@ -192,7 +192,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="NightWorker" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Release\roles\NightWorker" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
+          <role name="NightWorker" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Release\roles\NightWorker" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaWorkerHost.exe " memIndex="-1" hostingEnvironment="consoleroleadmin" hostingEnvironmentVersion="2">
             <settings>
               <aCS name="APPINSIGHTS_INSTRUMENTATIONKEY" defaultValue="" />
               <aCS name="ContainerName" defaultValue="" />
@@ -212,7 +212,7 @@
           </sCSPolicy>
         </groupHascomponents>
         <groupHascomponents>
-          <role name="WebFacade" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Release\roles\WebFacade" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="WebFacade" generation="1" functional="0" release="0" software="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Release\roles\WebFacade" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -249,9 +249,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="f366f5a4-47b5-48b3-b71f-43907f869b63" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
+    <implementation Id="23537398-be2e-47c2-bacf-cefc4e2bff1a" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="572a6389-dd80-45af-a326-97699ccf9576" ref="Microsoft.RedDog.Contract\Interface\WebFacade:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="fc716087-a364-49c4-8bea-f411064d6e80" ref="Microsoft.RedDog.Contract\Interface\WebFacade:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/thoughts4food/thoughts4foodGroup/WebFacade:Endpoint1" />
           </inPort>

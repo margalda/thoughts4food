@@ -28,7 +28,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Release\WebFacadeContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Release\WebFacadeContent\" />
       </Content>
     </Contents>
   </WebRole>
@@ -41,7 +41,7 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Release\CalcWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Release\CalcWorkerContent\" />
       </Content>
     </Contents>
   </WorkerRole>
@@ -54,7 +54,7 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Release\NightWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Release\NightWorkerContent\" />
       </Content>
     </Contents>
   </WorkerRole>

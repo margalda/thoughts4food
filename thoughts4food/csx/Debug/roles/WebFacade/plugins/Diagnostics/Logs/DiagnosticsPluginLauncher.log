@@ -1,17 +1,19 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:36] Emulator config file set to C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] DiagnosticsStoreRootPath set to: C:\Users\Daniel\AppData\Local\dftmp\Resources\eeaca930-f0b9-473b-b865-ffaed8f32b6b
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Loading config file: C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Config file to read: C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Emulator config file set to C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:37] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:38] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:38] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:39] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:40] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:08:40] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:09:53] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [27/02/2018 01:09:54] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Emulator config file set to C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] DiagnosticsStoreRootPath set to: C:\Users\Daniel\AppData\Local\dftmp\Resources\8afdc2fb-0e2d-4b3d-b700-6c8e95f09b38
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Loading config file: C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Config file to read: C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Emulator config file set to C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\csx\Debug\roles\WebFacade\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:53] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:59] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:21:59] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:22:01] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:22:05] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:22:05] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:23:18] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [28/02/2018 07:23:18] DiagnosticPlugin exited with code 0

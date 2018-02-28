@@ -190,7 +190,7 @@ namespace CalcWorker
             // Print the phone number of the result.
             if (retrievedResult.Result != null)
             {
-                foreach (var ingredient in ((DynamicTableEntity)retrievedResult.Result).Properties.Values)
+                foreach (var ingredient in ((DynamicTableEntity) retrievedResult.Result).Properties.Values)
                 {
                     var ingredientsParts = ingredient.StringValue.Split('_');
                     res.Add($"{ingredientsParts[0]}_{ingredientsParts[1]}", double.Parse(ingredientsParts[2]));

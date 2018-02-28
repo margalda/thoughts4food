@@ -28,10 +28,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\WebFacadeContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Debug\WebFacadeContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\WebFacadeContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\ecf\WebFacadeContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -47,10 +47,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\CalcWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Debug\CalcWorkerContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\CalcWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\ecf\CalcWorkerContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -66,10 +66,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\rcf\Debug\NightWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\rcf\Debug\NightWorkerContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Daniel\Documents\Visual Studio 2017\Projects\thoughts4food\thoughts4food\ecf\NightWorkerContent\" />
+        <SourceDirectory path="C:\Users\Daniel\Documents\GitHub\thoughts4food\thoughts4food\ecf\NightWorkerContent\" />
       </Content>
     </Contents>
     <Imports>
