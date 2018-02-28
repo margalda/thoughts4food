@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="7700c150-f86c-4b50-ada0-291ccec1936c" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="thoughts4food" generation="1" functional="0" release="0" Id="ceacfe18-fd21-414a-a36b-b91fcbf1b525" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="thoughts4foodGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -249,9 +249,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="23537398-be2e-47c2-bacf-cefc4e2bff1a" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
+    <implementation Id="a74a93b2-6c51-43b1-a5ad-a00066d3a2eb" ref="Microsoft.RedDog.Contract\ServiceContract\thoughts4foodContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="fc716087-a364-49c4-8bea-f411064d6e80" ref="Microsoft.RedDog.Contract\Interface\WebFacade:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="b2dff5b4-0ad2-4dc4-955c-d85d9197c0c9" ref="Microsoft.RedDog.Contract\Interface\WebFacade:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/thoughts4food/thoughts4foodGroup/WebFacade:Endpoint1" />
           </inPort>
